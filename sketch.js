@@ -6,7 +6,7 @@ function setup() {
   background(255);
   button = createButton('GO')
   button.mousePressed(LinkClik);
-  button.position(670,410);
+  button.position(650,410);
   button.size(50,40);
  button.style("font-family", "Impact");
   button.style("background-color","#fff");
@@ -26,7 +26,7 @@ function draw() {
   textFont('Impact');
   textSize(250);
   textAlign(CENTER);
-  text('MBC',650,360);
+  text('MBC',655,380);
   var d = random(0, 255);
   var e = random(0, 255);
   var f = random(0, 255);
