@@ -15,8 +15,8 @@ function setup() {
 }
 
 function randomColor() {
-  var a = random(0, 255);
-  var b = random(0, 255);
+  var a = random(0, 100);
+  var b = random(0, 70);
   var c = random(0, 255);
   background(a, b, c);
 }
