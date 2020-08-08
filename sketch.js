@@ -24,9 +24,9 @@ function randomColor() {
 function draw() { 
   fill(255);
   textFont('Impact');
-  textSize(90);
+  textSize(150);
   textAlign(CENTER);
-  text('GENTLE MONSTER',620,380);
+  text('MBC',620,380);
   var d = random(0, 255);
   var e = random(0, 255);
   var f = random(0, 255);
@@ -36,5 +36,5 @@ function draw() {
 }
 
 function LinkClik(){
- window.open("gentlemonster_portfolio.html", _self);
+ window.open("mbc_web.html", _self);
 }
