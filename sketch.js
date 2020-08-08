@@ -2,12 +2,12 @@ var button;
 var _self;
 
 function setup() {
-  createCanvas(1280,800);
+  createCanvas(1350,700);
   background(255);
   button = createButton('GO')
   button.mousePressed(LinkClik);
-  button.position(580,420);
-  button.size(50,40);
+  button.position(680,420);
+  button.size(60,40);
  button.style("font-family", "Impact");
   button.style("background-color","#fff");
  button.style("color","#000");
@@ -26,7 +26,7 @@ function draw() {
   textFont('Impact');
   textSize(150);
   textAlign(CENTER);
-  text('MBC',620,380);
+  text('MBC',620,340);
   var d = random(0, 255);
   var e = random(0, 255);
   var f = random(0, 255);
