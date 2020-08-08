@@ -24,7 +24,7 @@ function randomColor() {
 function draw() { 
   fill(255);
   textFont('Impact');
-  textSize(150);
+  textSize(250);
   textAlign(CENTER);
   text('MBC',620,340);
   var d = random(0, 255);
