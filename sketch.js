@@ -32,7 +32,7 @@ function draw() {
   var f = random(0, 255);
   fill(d,e,f);
   noStroke();
-  ellipse(mouseX, mouseY, 40, 40);
+  ellipse(mouseX, mouseY, 50, 50);
 }
 
 function LinkClik(){
