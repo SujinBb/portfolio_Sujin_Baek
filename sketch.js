@@ -36,5 +36,5 @@ function draw() {
 }
 
 function LinkClik(){
- window.open("video.html", _self);
+ window.open("vimeo.html", _self);
 }
