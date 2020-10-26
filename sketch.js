@@ -1,49 +1,40 @@
-var r;
-var b;
-var words = ["#Sujin Baek","#CJ ENM","#1990", "#0905", "#Horse", "#Germany","#31","#Female","#FC Liverpool",
-              "#A","#ENFJ-A","#Adobe","#Media Art","#Art","# Appreciating Movies",
-              "#Travel","#Cycling","#Video","#MadMapper","#Coding","#Illustration","#Design",
-              "#Web Art", "#Color","#Yangpyeong","#Köln","#164","#Art Museum","#Fine Art"];
-var index = 0;
 var button;
 var _self;
 
-function setup() { 
-  createCanvas(1280,800);
-  bgColor = color( random(255), random(255), random(255) );
-
-  button = createButton('NEXT')
+function setup() {
+  createCanvas(1350,700);
+  background(0);
+  button = createButton('GO')
   button.mousePressed(LinkClik);
-  button.position(1150,660);
-  button.size(80,40);
-  button.style("font-family", "Arial Narrow");
-  button.style("background-color","#fff");
-  button.style("color","#000");
-  button.style('font-size', '20px');
- 
-
-} 
-
-function draw() { 
-  background(bgColor);
-  fill(255);
-  textFont('Impact');
-  textSize(90);
-  textAlign(CENTER);
-  text(words[index],620,380);
-
+  button.position(640,420);
+  button.size(50,40);
+ button.style("font-family", "Impact");
+  button.style("background-color","#000");
+ button.style("color","#FFF");
+ button.style('font-size', '20px');
 }
 
-function mousePressed() {
- bgColor = color( random(255), random(255), random(255) );
-  index = floor(random(words.length));
-  console.log(index);
-  if (index == words.length) {
-    index = 0;
-  }
-  
+function randomColor() {
+  var a = random(0, 255);
+  var b = random(0, 255);
+  var c = random(0, 255);
+  background(a, b, c);
+}
+
+function draw() { 
+  fill(0);
+  textFont('Impact');
+  textSize(130);
+  textAlign(CENTER);
+  text('GIANTSTEP',645,395);
+  var d = random(200, 255);
+  var e = random(0, 255);
+  var f = random(0, 225);
+  fill(d,e,f);
+  noStroke();
+  ellipse(mouseX, mouseY,200,200);
 }
 
 function LinkClik(){
- window.open("menu.html", _self);
+ window.open("video.html", _self);
 }
