@@ -1,15 +1,47 @@
-<!DOCTYPE html>
-<html>
-  <head>
+
+    <html> 
+     <head>
     <meta charset="UTF-8">
     <title>Video</title>
-    <video src="https://vimeo.com/472077254" autoplay>
-    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
-  </head>
-  <body>
-    <body style="background-color:black;">
-      h1 {HI
-  color: white;
-}
-  </body>
+    </head>
+<body> 
+ <body style="background-color:black;">
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="720">
+    <source src="Sequence.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1080; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 420; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 720; 
+} 
+</script> 
+
+<p>Video courtesy of <a href="https://vimeo.com/472077254" target="_blank">Portfolio</a>.</p>
+
+</body> 
 </html>
